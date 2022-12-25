@@ -80,7 +80,7 @@ function Beta() {
 
   return (
     <Container>
-      <ButtonContainer onClick={connectWalletPressed}r>
+      <ButtonContainer onClick={() => connectWalletPressed}r>
       {walletAddress.length > 0 ? (
         <Connect>{String(walletAddress).substring(0,6) + "..." +
         String(walletAddress).substring(38)}</Connect>
