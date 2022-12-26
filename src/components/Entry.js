@@ -5,6 +5,7 @@ import Row from './Row';
 function Entry() {
   return (
     <Container>
+      <Cover></Cover>
       <Title>ROK</Title>
       <Body>
         <Menu>
@@ -39,13 +40,29 @@ function Entry() {
         />
       </Body>
       <Bottom>
-        <Subtitle>The First Stock Market dedicated to Content Creators</Subtitle>
+        <Subtitle>Buy, sell & trade the tokens of your fav content creators</Subtitle>
       </Bottom>
     </Container>
   )
 }
 
 export default Entry
+
+
+const Cover = styled.div`
+  height: 100%; 
+  width: 100%; 
+  position: absolute; 
+  z-index: 2; 
+  background: blue;
+  border-radius: 10px;
+  background: rgba( 255, 255, 255, 0.15 );
+  //box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+`; 
 
 const Container = styled.div`
   width: 100%; 
@@ -66,6 +83,7 @@ const Title = styled.text`
   background: transparent; 
   font-size: 40px; 
   font-family: poppins; 
+  z-index: 3;
 `; 
 
 const Bottom = styled.div`
@@ -88,7 +106,8 @@ const Subtitle = styled.text`
   font-family: poppins; 
   font-size: 35px; 
   background: transparent;
-  font-weight: 500;
+  font-weight: 600;
+  z-index: 3;
   @media(max-width: 1056px) {
     font-size: 30px;
   }

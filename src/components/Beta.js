@@ -89,7 +89,7 @@ function Beta() {
       )}
       </ButtonContainer>
       <BigTitle>Try it</BigTitle>
-      <Title>Deploy your own creator's token</Title>
+      <Title>Deploy your own content creator's token</Title>
       <SubTitle>Soon, anyone will be able to trade it</SubTitle>
       <Wrap>
       <Wrapper>
